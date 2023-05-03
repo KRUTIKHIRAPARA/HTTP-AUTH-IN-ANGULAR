@@ -1,0 +1,30 @@
+
+<form>
+    <input type="text" name="stdName" [(ngModel)]="getStudents.student" autocomplete="off" placeholder="Enter Student Name">
+    <input type="text" name="cityName" [(ngModel)]="getStudents.city" autocomplete="off" placeholder="Enter Student City">
+    <button (click)="addDatas(getStudents)" *ngIf="toggleOnOff">Add Student</button>
+    <button (click)="updateDatas(getStudents)" *ngIf="!toggleOnOff">Update</button>
+    <button (click)="cancelDatas()" *ngIf="!toggleOnOff">Cancel</button>
+</form>
+
+<br>
+
+<table >
+    <thead>
+        <tr>
+          <th>Id</th>
+          <th>Student</th>
+          <th>City</th>
+          <th>Action</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let i of allDatas, let j = index">
+        <tr>
+            <td>{{ j+1 }}</td>
+            <td>{{ i.student }}</td>
+            <td>{{ i.city }}</td>
+            <td><button (click)="fillDatas(i)">Edit</button>&nbsp;
+            <button (click)="deleteDatas(i)">Delete</button></td>
+          </tr>
+    </tbody>  
+  </table>

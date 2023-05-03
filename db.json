@@ -1,0 +1,39 @@
+{
+  "StudentData": [
+    {
+      "student": "Dhavl",
+      "city": "Junagadh",
+      "id": 1
+    },
+    {
+      "student": "Ankit",
+      "city": "Bilkha",
+      "id": 2
+    },
+    {
+      "student": "Sanjay",
+      "city": "Delhi",
+      "id": 3
+    },
+    {
+      "student": "Ramesh",
+      "city": "Visavadar",
+      "id": 4
+    },
+    {
+      "student": "jkjjk",
+      "city": "jkjkjkj",
+      "id": 5
+    },
+    {
+      "student": "hghgg",
+      "city": "ghgg",
+      "id": 6
+    },
+    {
+      "student": "ghgh",
+      "city": "ghgh",
+      "id": 7
+    }
+  ]
+}
