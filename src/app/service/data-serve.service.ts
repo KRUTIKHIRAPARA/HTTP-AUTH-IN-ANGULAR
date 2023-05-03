@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { HttpHeaders } from '@angular/common/http';
 
@@ -13,18 +13,20 @@ export class DataServeService {
 
   constructor(private _http:HttpClient) { }
 
+
+  params = new HttpParams()
+  .set('id','1')
+  .set('name','krutik');
+
+  // Builtin Header
   headerss = new HttpHeaders({
     'content-type': 'application/json',
-    'Authorization': 'KRhirsdds@mpr',
-    'timeOutSeconds': '7'
+    'Authorization': 'KRhirfsdds@mpr',
+    'timeOutSeconds': '10'
   });
 
 
   getData(){
-
-    // Builtin Header
-   
-
 
     // Custome Header
     this.headerss = this.headerss.set('main-id','kdsd78s7dsjn');
@@ -34,6 +36,7 @@ export class DataServeService {
     var currTime =0;
     setInterval(() => {
       currTime += 1;
+
       console.log(currTime);
       if(time === currTime.toString()){
         this.headerss = this.headerss.set('Authorization','krutikhirapara');
@@ -44,7 +47,7 @@ export class DataServeService {
       }
     }, 1000);  
 
-    return this._http.get(this.jsonURL,{responseType:'json', headers:this.headerss});
+    return this._http.get(this.jsonURL,{responseType:'json', headers:this.headerss, params:this.params, withCredentials:true});
   }
 
   addData(body:StudentDataAuth){

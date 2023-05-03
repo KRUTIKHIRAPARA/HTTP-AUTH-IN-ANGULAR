@@ -1,7 +1,7 @@
 {
   "StudentData": [
     {
-      "student": "Dhavl",
+      "student": "Dhaval",
       "city": "Junagadh",
       "id": 1
     },
@@ -21,19 +21,9 @@
       "id": 4
     },
     {
-      "student": "jkjjk",
-      "city": "jkjkjkj",
+      "student": "erer",
+      "city": "erer",
       "id": 5
-    },
-    {
-      "student": "hghgg",
-      "city": "ghgg",
-      "id": 6
-    },
-    {
-      "student": "ghgh",
-      "city": "ghgh",
-      "id": 7
     }
   ]
 }
