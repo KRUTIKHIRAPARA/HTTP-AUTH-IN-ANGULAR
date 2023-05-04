@@ -47,7 +47,8 @@ export class DataServeService {
       }
     }, 1000);  
 
-    return this._http.get(this.jsonURL,{responseType:'json', headers:this.headerss, params:this.params, withCredentials:true});
+    // return this._http.get(this.jsonURL,{responseType:'json', headers:this.headerss, params:this.params, withCredentials:true});
+    return this._http.get(this.jsonURL,{responseType:'json', headers:this.headerss});
   }
 
   addData(body:StudentDataAuth){

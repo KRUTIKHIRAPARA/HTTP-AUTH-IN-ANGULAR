@@ -31,7 +31,6 @@ export class HttpWorkComponent {
       error:(err)=>{
         console.log(err);
       },
-      complete:()=>{}
     })
   }
 
@@ -55,7 +54,6 @@ export class HttpWorkComponent {
             break;
       }
       },
-      complete:()=>{}
     })
   }
 
@@ -75,7 +73,6 @@ export class HttpWorkComponent {
       error:(err)=>{
         console.log(err);
       },
-      complete:()=>{}
     })
   }
 
@@ -94,11 +91,6 @@ export class HttpWorkComponent {
       error:(err)=>{
         console.log(err);
       },
-      // error:(err: HttpErrorResponse)=>{
-      //   expect(err.status).withContext('status').toEqual(404);
-      //   expect(err.error).withContext('message').toEqual('404 Not Found!!!');
-      // },
-      complete:()=>{}
     })
   }
 

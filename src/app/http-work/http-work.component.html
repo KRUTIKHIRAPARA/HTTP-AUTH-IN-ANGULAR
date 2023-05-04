@@ -1,8 +1,8 @@
 
-<form>
+<form (keyup.enter)="addDatas(getStudents)">
     <input type="text" name="stdName" [(ngModel)]="getStudents.student" autocomplete="off" placeholder="Enter Student Name">
-    <input type="text" name="cityName" [(ngModel)]="getStudents.city" autocomplete="off" placeholder="Enter Student City">
-    <button (click)="addDatas(getStudents)" *ngIf="toggleOnOff">Add Student</button>
+    <input type="text" name="cityName" [(ngModel)]="getStudents.city" autocomplete="off" en placeholder="Enter Student City">
+    <!-- <button (click)="addDatas(getStudents)" *ngIf="toggleOnOff">Add Student</button> -->
     <button (click)="updateDatas(getStudents)" *ngIf="!toggleOnOff">Update</button>
     <button (click)="cancelDatas()" *ngIf="!toggleOnOff">Cancel</button>
 </form>
